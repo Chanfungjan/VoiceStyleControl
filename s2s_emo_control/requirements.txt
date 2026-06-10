@@ -1,0 +1,6 @@
+mindspore>=2.2.0
+numpy>=1.23.0
+soundfile>=0.12.0
+tqdm>=4.65.0
+torch>=2.0.0
+# Install torch_npu from the Ascend/CANN package that matches your runtime.

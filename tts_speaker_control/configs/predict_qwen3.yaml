@@ -1,0 +1,14 @@
+use_legacy: false
+pretrained_model_dir: "../../pretrain_models/Qwen3-8B"
+
+use_parallel: false
+parallel_config:
+  data_parallel: 1
+  model_parallel: 1
+
+run_mode: predict
+
+max_new_tokens: 512
+do_sample: true
+top_p: 0.9
+temperature: 0.8
