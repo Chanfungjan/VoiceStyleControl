@@ -26,8 +26,8 @@ env/
 output/
 *.ark
 *.wav
+!prompt_speech/**/*.wav
+!en_prompt_speech/**/*.wav
 *.scp
 pretrained_models/
-prompt_speech/
-en_prompt_speech/
 *.jsonl
