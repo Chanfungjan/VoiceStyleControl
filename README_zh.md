@@ -7,7 +7,7 @@
 - `tts_speaker_control/`：先用 Qwen3 生成 `{text, answer}` 文本对，再用 CosyVoice Instruct **只合成 answer 侧语音**。`text` 是说话人风格/情绪描述（作为 instruction），`answer` 是待朗读台词（TTS content）。
 - `s2s_emo_control/`：输入已有的 `(text, answer)` 文本对，用 CosyVoice zero-shot + 情绪指令**同时合成 query 和 answer 两侧语音**。
 
-框架边界：文本生成与音频后处理走 MindSpore，CosyVoice 推理走 `torch_npu`，ark/scp 与 JSONL 读写复用 `common/`。运行需要 Ascend/CANN 环境。
+框架边界：这是 VoiceStyleControl 数据集的 MindSpore 实现版本，运行需要 Ascend/CANN 环境。
 
 ## 目录
 
