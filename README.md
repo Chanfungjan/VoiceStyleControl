@@ -7,7 +7,7 @@ A speech dataset synthesis project with speaker-style and emotion control. It co
 - `tts_speaker_control/`: first generates `{text, answer}` pairs with Qwen3, then synthesizes **only the answer-side speech** with CosyVoice Instruct. `text` is the speaker style/emotion description (used as the instruction), `answer` is the line to read (TTS content).
 - `s2s_emo_control/`: takes existing `(text, answer)` pairs and synthesizes **both query-side and answer-side speech** with CosyVoice zero-shot plus an emotion instruction.
 
-Framework boundary: text generation and audio post-processing use MindSpore, CosyVoice inference uses `torch_npu`, and ark/scp + JSONL utilities are shared via `common/`. Requires an Ascend/CANN environment.
+Framework boundary: This is the MindSpore implementation version of VoiceStyleControl dataset, and it needs Ascend/CANN environment to run.
 
 ## Layout
 
